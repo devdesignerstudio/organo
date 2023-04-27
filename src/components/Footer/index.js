@@ -37,7 +37,7 @@ const Footer = () => {
         </ul>
       </section>
       <section>
-        <img src="./img/logo.png" alt="" />
+        <img src="./img/logo.png" alt="logo da Alura" />
       </section>
       <section>
         <p>
