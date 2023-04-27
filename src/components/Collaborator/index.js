@@ -6,10 +6,10 @@ const Collaborator = (props) => {
 
   return (
     <div className="collaborator">
-      <div className="header" style={{ backgroundColor: bgColor }}>
+      <div className="header-collaborator" style={{ backgroundColor: bgColor }}>
         <img src={urlImg} alt={`Github ${name}`} />
       </div>
-      <div className="footer">
+      <div className="footer-collaborator">
         <h4>{name}</h4>
         <h5>{jobPosition}</h5>
       </div>
