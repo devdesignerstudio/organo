@@ -5,49 +5,72 @@ import { useState } from "react"
 import Footer from "./components/Footer"
 
 function App() {
-  const teams = [
+  const [teams, setTeams] = useState([
     {
       name: "Programming",
-      primaryColor: "#57C278",
-      secondaryColor: "#D9F7E9",
+      color: "#57C278",
+      // primaryColor: "rgba(0, 200, 111, 0.15)",
     },
     {
       name: "Front-End",
-      primaryColor: "#82CFFA",
-      secondaryColor: "#E8F8FF",
+      color: "#82CFFA",
+      // primaryColor: "#E8FFFF",
     },
     {
       name: "Data Science",
-      primaryColor: "#A6D157",
-      secondaryColor: "#F0F8E2",
+      color: "#A6D157",
+      // primaryColor: "#E9FFE3",
     },
     {
       name: "Devops",
-      primaryColor: "#E06B69",
-      secondaryColor: "#FDE7E8",
+      color: "#E06B69",
+      // primaryColor: "rgba(241, 97, 101, 0.15)",
     },
     {
       name: "UX & Design",
-      primaryColor: "#DB6EBF",
-      secondaryColor: "#FAE9F5",
+      color: "#DB6EBF",
+      // primaryColor: "rgba(220, 110, 190, 0.15)",
     },
     {
       name: "Mobile",
-      primaryColor: "#FFBA05",
-      secondaryColor: "#FFF5D9",
+      color: "#FFBA05",
+      // primaryColor: "rgba(255, 186, 5, 0.15)",
     },
     {
       name: "Inovation & Management",
-      primaryColor: "#FF8A29",
-      secondaryColor: "#FFEEDF",
+      color: "#FF8A29",
+      // primaryColor: "rgba(255, 140, 42, 0.15)",
     },
-  ]
+  ])
 
   const [cards, setCards] = useState([])
 
+  const collaboratorsCards =
+    localStorage.getItem("collaborators") !== null
+      ? JSON.parse(localStorage.getItem("collaborators"))
+      : []
+
   const newCard = (card) => {
     // debugger
-    setCards([...cards, card])
+    const newCollaborators = [...collaboratorsCards, card]
+    setCards(newCollaborators)
+    localStorage.clear()
+    localStorage.setItem("collaborators", JSON.stringify(newCollaborators))
+  }
+
+  function deleteCard(index) {
+    console.log(`card ${index} deleted`)
+  }
+
+  function changeTeamColor(color, name) {
+    setTeams(
+      teams.map((team) => {
+        if (team.name === name) {
+          team.color = color
+        }
+        return team
+      })
+    )
   }
 
   return (
@@ -57,15 +80,22 @@ function App() {
         teamsName={teams.map((t) => t.name)}
         onSave={(card) => newCard(card)}
       />
-      {teams.map((team) => (
-        <Team
-          key={team.name}
-          name={team.name}
-          primaryColor={team.primaryColor}
-          secondaryColor={team.secondaryColor}
-          collaborators={cards.filter((c) => c.team === team.name)}
-        />
-      ))}
+      <section className="myteams">
+        {collaboratorsCards.length > 0 && <h1>My organization</h1>}
+        {teams.map((team, index) => (
+          <Team
+            changeColor={changeTeamColor}
+            key={index}
+            name={team.name}
+            // primaryColor={team.primaryColor}
+            color={team.color}
+            collaborators={collaboratorsCards.filter(
+              (c) => c.team === team.name
+            )}
+            onDelete={deleteCard(index)}
+          />
+        ))}
+      </section>
       <Footer />
     </div>
   )

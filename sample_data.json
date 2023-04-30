@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Programming"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Programming"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "Programming"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Front-End"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Front-End"
+    },
+    {
+    	"name": "Célio",
+	"jobPosition": "Dev junior",
+	"urlImg": "https://github.com/devdesignerstudio.png",
+	"team": "Front-End"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "Data Science"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Data Science"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Data Science"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "Devops"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Devops"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Devops"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "UX & Design"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "UX & Design"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "UX & Design"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "Mobile"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Mobile"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Mobile"
+    },
+    {
+    	"name": "Célio",
+    	"jobPosition": "Dev junior",
+    	"urlImg": "https://github.com/devdesignerstudio.png",
+    	"team": "Inovation & Management"
+    },
+    {
+        "name": "Diego",
+        "jobPosition": "CIO",
+        "urlImg": "https://github.com/diego3g.png",
+        "team": "Inovation & Management"
+    },
+    {
+        "name": "Paulo",
+        "jobPosition": "CEO",
+        "urlImg": "https://github.com/peas.png",
+        "team": "Inovation & Management"
+    }
+]
+
+
