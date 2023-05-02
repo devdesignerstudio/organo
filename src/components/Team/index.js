@@ -1,10 +1,17 @@
 import Collaborator from "../Collaborator"
 import "./Team.css"
 import hexToRgba from "hex-to-rgba"
+import { v4 as uuidv4 } from "uuid"
 
 const Team = (props) => {
-  const { name, primaryColor, color, collaborators, onDelete, changeColor } =
-    props
+  const {
+    name,
+    teamId /*primaryColor*/,
+    color,
+    collaborators,
+    onDelete,
+    changeColor,
+  } = props
 
   const css = {
     backgroundImage: "url(/img/fundo.png)",
@@ -18,7 +25,7 @@ const Team = (props) => {
           value={color}
           type="color"
           className="input-color"
-          onChange={(event) => changeColor(event.target.value, name)}
+          onChange={(event) => changeColor(event.target.value, teamId)}
         />
         <h3 style={{ borderColor: color }}>{name}</h3>
         <div className="collaborators">

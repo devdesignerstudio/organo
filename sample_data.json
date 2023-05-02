@@ -18,6 +18,12 @@
     	"team": "Programming"
     },
     {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Programming"
+    },
+    {
         "name": "Diego",
         "jobPosition": "CIO",
         "urlImg": "https://github.com/diego3g.png",
@@ -34,6 +40,12 @@
 	"jobPosition": "Dev junior",
 	"urlImg": "https://github.com/devdesignerstudio.png",
 	"team": "Front-End"
+    },
+    {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Front-End"
     },
     {
     	"name": "Célio",
@@ -54,6 +66,12 @@
         "team": "Data Science"
     },
     {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Data Science"
+    },
+    {
     	"name": "Célio",
     	"jobPosition": "Dev junior",
     	"urlImg": "https://github.com/devdesignerstudio.png",
@@ -70,6 +88,12 @@
         "jobPosition": "CEO",
         "urlImg": "https://github.com/peas.png",
         "team": "Devops"
+    },
+    {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Devops"
     },
     {
     	"name": "Célio",
@@ -90,6 +114,12 @@
         "team": "UX & Design"
     },
     {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "UX & Design"
+    },
+    {
     	"name": "Célio",
     	"jobPosition": "Dev junior",
     	"urlImg": "https://github.com/devdesignerstudio.png",
@@ -108,6 +138,12 @@
         "team": "Mobile"
     },
     {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Mobile"
+    },
+    {
     	"name": "Célio",
     	"jobPosition": "Dev junior",
     	"urlImg": "https://github.com/devdesignerstudio.png",
@@ -124,6 +160,12 @@
         "jobPosition": "CEO",
         "urlImg": "https://github.com/peas.png",
         "team": "Inovation & Management"
+    },
+    {
+    	"name": "Mayk Brito",
+    	"jobPosition": "Dev Senior",
+    	"urlImg": "https://github.com/maykbrito.png",
+    	"team": "Inovation & Management"
     }
 ]
 
