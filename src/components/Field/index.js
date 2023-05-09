@@ -1,18 +1,18 @@
-import "./TextField.css"
+import "./Field.css"
 
-const TextField = (props) => {
-  const { label, placeholder, musthave, value } = props
+const Field = (props) => {
+  const { type = "text", label, placeholder, musthave = false, value } = props
 
   const atTyping = (event) => {
     props.onChange(event.target.value)
   }
 
   return (
-    <div className="field-text">
+    <div className={`field field-${type}`}>
       <label>{label}</label>
       <input
+        type={type}
         value={value}
-        type="text"
         placeholder={`${placeholder}...`}
         required={musthave}
         onChange={atTyping}
@@ -21,4 +21,4 @@ const TextField = (props) => {
   )
 }
 
-export default TextField
+export default Field

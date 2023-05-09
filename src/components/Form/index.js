@@ -1,5 +1,5 @@
 import DropdownList from "../DropdownList"
-import TextField from "../TextField"
+import Field from "../Field"
 import Button from "../Button"
 import "./Form.css"
 import { useState } from "react"
@@ -9,8 +9,10 @@ const Form = (props) => {
   const [jobPosition, setJobPosition] = useState("")
   const [urlImg, setUrlImg] = useState("")
   const [team, setTeam] = useState("")
+  const [teamName, setTeamName] = useState("")
+  const [teamColor, setTeamColor] = useState("")
 
-  const atSave = (event) => {
+  const onCardSave = (event) => {
     event.preventDefault()
     props.onSave({
       name,
@@ -24,25 +26,35 @@ const Form = (props) => {
     setTeam("")
   }
 
+  const onTeamSave = (event) => {
+    event.preventDefault()
+    props.createTeam({
+      name: teamName,
+      color: teamColor,
+    })
+    setTeamName("")
+    setTeamColor("")
+  }
+
   return (
-    <section className="form">
-      <form onSubmit={atSave}>
+    <section className="form-container">
+      <form onSubmit={onCardSave}>
         <h2>Please fill in all fields to create collaborator's card</h2>
-        <TextField
+        <Field
           musthave={true}
           label="Name"
           placeholder="Enter your name..."
           value={name}
           onChange={(value) => setName(value)}
         />
-        <TextField
+        <Field
           musthave={true}
           label="Job Position"
           placeholder="Enter your job position..."
           value={jobPosition}
           onChange={(value) => setJobPosition(value)}
         />
-        <TextField
+        <Field
           musthave={false}
           label="Image"
           placeholder="Enter your image URL address"
@@ -57,6 +69,25 @@ const Form = (props) => {
           onChange={(val) => setTeam(val)}
         />
         <Button>Save Card</Button>
+      </form>
+      <form className="form-teams" onSubmit={onTeamSave}>
+        <h2>Please fill in all fields to create a new Team</h2>
+        <Field
+          musthave={true}
+          label="Team name"
+          placeholder="Enter Team's name..."
+          value={teamName}
+          onChange={(value) => setTeamName(value)}
+        />
+        <Field
+          type="color"
+          musthave={true}
+          label="Team color"
+          placeholder="Enter Team's color..."
+          value={teamColor}
+          onChange={(value) => setTeamColor(value)}
+        />
+        <Button>Create Team</Button>
       </form>
     </section>
   )

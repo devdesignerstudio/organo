@@ -1,7 +1,6 @@
 import Collaborator from "../Collaborator"
 import "./Team.css"
 import hexToRgba from "hex-to-rgba"
-import { v4 as uuidv4 } from "uuid"
 
 const Team = (props) => {
   const {
@@ -11,6 +10,7 @@ const Team = (props) => {
     collaborators,
     onDelete,
     changeColor,
+    onFavorite,
   } = props
 
   const css = {
@@ -36,6 +36,7 @@ const Team = (props) => {
                 key={index}
                 data={collaborator}
                 onDelete={onDelete}
+                onFavorite={onFavorite}
               />
             )
           })}

@@ -11,7 +11,9 @@ const DropdownList = (props) => {
         value={value}
         required={musthave}
       >
-        <option key="" value=""></option>
+        <option key="" value="">
+          Choose you Team...
+        </option>
         {items.map((item) => (
           <option key={item} value={item}>
             {item}
